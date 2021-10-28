@@ -54,3 +54,9 @@ document.body.querySelector('.contact-form__submit').addEventListener('click', (
     event.preventDefault();
     mainFunc.sendRequest();
 });
+setTimeout(() => {
+    document.body.querySelector('.skiptranslate').style.display = 'none';
+    document.body.style.position = 'static';
+}
+, 1000);
+

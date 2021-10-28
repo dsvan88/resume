@@ -1,4 +1,4 @@
 git add -A
-git commit -m "v0.96 Adaptived for Chrome based browsers"
+git commit -m "v0.97 Add google translate"
 git push -u origin main
 pause
