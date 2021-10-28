@@ -78,16 +78,31 @@ const mainFunc = {
         const modal = new ModalWindow();
         let form = document.body.querySelector("#contact-form__form");
         let data = new FormData(form);
+
+        let check = {};
+        for (let [name, value] of data.entries()) {
+            check[name] = value;
+        }
+
+        if (check['customer-name'].trim() == '') {
+            modal.fillModalContent({ html: `<h1>Please, enter your name, before send request</h1>`, title: 'No name!', buttons: [ { 'text': 'Okay', 'className': 'modal__button modal-close' }] });
+            return false;
+        }
+        else if (check['customer-contact'].trim() == '' && check['customer-email'].trim() == '') {
+            modal.fillModalContent({ html: `<h1>Please, enter your contacts (Phone number or e-mail), before send request</h1>`, title: 'No name!', buttons: [{ 'text': 'Okay', 'className': 'modal__button modal-close' }] });
+            return false;
+        }
+
         data = formDataToJson(data);
 
         data = await useFetchApi({ url: form.action, method: 'POST', data: data});
         if (!data) {
-            modal.fillModalContent({ html: 'Connection error! Please, try again later.', title: 'Error!' });
+            modal.fillModalContent({ html: 'Connection error! Please, try again later.', title: 'Error!', buttons: [{ 'text': 'Okay', 'className': 'modal__button modal-close' }] });
         }
         else {
-            modal.fillModalContent({ html: `<h1>${data.text}</h1>`, title: data.title });
+            modal.fillModalContent({ html: `<h1>${data.text}</h1>`, title: data.title, buttons: [{ 'text': 'Okay, I’ill wait!', 'className': 'modal__button modal-close' }] });
         }
-    }
+    },
 };
 function formDataToJson(data) {
     const object = {};

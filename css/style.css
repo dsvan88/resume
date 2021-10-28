@@ -3992,6 +3992,14 @@ body {
   padding-right: 5px;
 }
 
+.modal-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .modal-container {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #c3ecff), color-stop(90%, #f3f0ce));

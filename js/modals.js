@@ -6,7 +6,7 @@ class ModalWindow {
 	currentOverlay = null;
 	headerTitle = null;
 
-	constructor({ divId = "modalWindow", html = '', title = '' } = {}) {
+	constructor({ divId = "modalWindow", html = "", title = "", buttons = [] } = {}) {
 		this.commonOverlay = document.body.querySelector("#overlay");
 		if (this.commonOverlay === null) {
 			this.commonOverlay = document.createElement("div");
@@ -16,14 +16,30 @@ class ModalWindow {
 		}
 		this.prepeareModalWindow(divId);
 		if (html !== '') {
-			this.fillModalContent({ html, title });
+			this.fillModalContent({ html, title, buttons });
 		}
 	};
-	fillModalContent({ html = "", title = "" }) {
-		if (html !== "")
-			this.modal.querySelector('.modal-container').innerHTML = html;
+	fillModalContent({ html = "", title = "", buttons = [] }) {
+		let modalContainer = null;
+		if (html !== "" || buttons.length !== 0) {
+			modalContainer = this.modal.querySelector('.modal-container');
+			modalContainer.innerHTML = html;
+		}
 		if (title !== "")
 			this.modal.querySelector('.modal-title').innerText = title;
+		if (buttons.length !== 0) {
+			modalContainer = modalContainer || this.modal.querySelector('.modal-container');
+			const modalButtons = document.createElement('div');
+			modalButtons.className = 'modal-buttons';
+			buttons.forEach(button => {
+				const element = document.createElement('button');
+				element.innerText = button.text;
+				element.className = button.className;
+				modalButtons.append(element);
+				
+			})
+			modalContainer.append(modalButtons)
+		}
 	};
 	prepeareModalWindow(divId = "modalWindow") {
 		let modalHeader = document.createElement("div");

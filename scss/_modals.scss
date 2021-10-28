@@ -58,6 +58,10 @@ $modal-color: $modal-hd-start;
 		align-items: center;
 		padding-right: 5px;
 	}
+	&-buttons {
+		display: flex;
+		justify-content: space-around;
+	}
 	&-container {
 		position: relative;
 		// background-color: $modal-bg;
