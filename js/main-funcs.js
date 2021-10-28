@@ -9,9 +9,7 @@ async function useFetchApi({ url = '', type = "json", data = ''}) {
         };
         options.mode = 'cors';
         options.method = 'POST';
-        console.log(options)
     }
-    console.log(options);
     let response = await fetch(url, options);
     if (response.ok)
         return await response[type]();
@@ -24,7 +22,7 @@ const mainFunc = {
     },
     updateProjects: async function () {
         projectsSection = document.body.querySelector('section#projects');
-        let projectsSectionHtml = '<h3 class="projects__title section-second-title">My test projects</h3>';
+        let projectsSectionHtml = '<h3 class="projects__title section__title">My test projects</h3>';
         for (let x = 1; x < 10; x++) {
             let data = await useFetchApi({ url: `/Examples/Example${x}/description.txt` });
             if (!data) break;
@@ -66,12 +64,10 @@ const mainFunc = {
         });
         modal.fillModalContent({
             html: `
-                <div class="modal-container">
-                    <div class="gallery">
-                        <i class="fa fa-arrow-circle-o-left arrow-left" aria-hidden="true"></i>
-                        ${galleryWrapper.innerHTML}
-                        <i class="fa fa-arrow-circle-o-right arrow-right" aria-hidden="true"></i>
-                    </div>
+                <div class="gallery">
+                    <i class="fa fa-arrow-circle-o-left arrow-left" aria-hidden="true"></i>
+                    ${galleryWrapper.innerHTML}
+                    <i class="fa fa-arrow-circle-o-right arrow-right" aria-hidden="true"></i>
                 </div>`,
             title: `My photo gallery`
         });
@@ -83,7 +79,7 @@ const mainFunc = {
         let form = document.body.querySelector("#contact-form__form");
         let data = new FormData(form);
         data = formDataToJson(data);
-        console.log(data);
+
         data = await useFetchApi({ url: form.action, method: 'POST', data: data});
         if (!data) {
             modal.fillModalContent({ html: 'Connection error! Please, try again later.', title: 'Error!' });

@@ -223,6 +223,31 @@ a {
 		color: $achor-visited-color;
 	}
 }
+.dashboard {
+	position: fixed;
+	right: 0px;
+	top: 20vh;
+	background-color: #0c82ea5e;
+	border-radius: 10px 0px 0px 10px;
+	border: 3px double #0582f0e0;
+	border-right: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: $animation-fast;
+	.navigation {
+		font-size: 1.4em;
+	}
+	&__button-up {
+		position: fixed;
+		right: 3vw;
+		bottom: 3vh;
+		font-size: 3em !important;
+		@include sm {
+			position: static;
+			margin-top: 20px;
+		}
+	}
+}
 .navigation {
 	list-style: none;
 	&__title {

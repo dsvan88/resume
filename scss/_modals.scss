@@ -60,8 +60,8 @@ $modal-color: $modal-hd-start;
 	}
 	&-container {
 		position: relative;
-		background-color: $modal-bg;
-		// border: $modal-border;
+		// background-color: $modal-bg;
+		background: linear-gradient(#c3ecff 40%, #f3f0ce 90%);
 		border-radius: 0px 0px 5px 5px;
 		padding: 10px 20px;
 		color: $modal-color;

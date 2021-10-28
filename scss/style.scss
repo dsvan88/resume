@@ -124,7 +124,7 @@ body {
 		padding: 20px 10px;
 		border-radius: 5px 0px 0px 5px;
 
-		.section-second-title {
+		.section__title {
 			width: 100%;
 			padding-left: 20px;
 			margin: 10px 0px;
@@ -135,7 +135,7 @@ body {
 		@include sm {
 			padding: 10px 5px;
 			border-radius: 0px;
-			.section-second-title {
+			.section__title {
 				font-size: 1.5rem;
 			}
 		}
@@ -198,6 +198,7 @@ body {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			margin-bottom: 50px;
 			&__item {
 				width: 300px;
 				height: 300px;
@@ -249,6 +250,7 @@ body {
 		}
 	}
 	.right-side {
+		font-size: 1.6em;
 		@include sm {
 			display: none;
 		}
@@ -319,31 +321,6 @@ body {
 			color: #5fa887;
 		}
 	}
-	.dashboard {
-		position: fixed;
-		right: 0px;
-		top: 20vh;
-		background-color: #0c82ea5e;
-		border-radius: 10px 0px 0px 10px;
-		border: 3px double #0582f0e0;
-		border-right: 0;
-		opacity: 0;
-		pointer-events: none;
-		transition: $animation-fast;
-		.navigation {
-			font-size: 1.4em;
-		}
-		&__button-up {
-			position: fixed;
-			right: 3vw;
-			bottom: 3vh;
-			font-size: 3em !important;
-			@include sm {
-				position: static;
-				margin-top: 20px;
-			}
-		}
-	}
 }
 .contact-form {
 	display: flex;
@@ -379,6 +356,19 @@ body {
 		font-size: 1.5rem;
 		color: $input-text-color;
 		margin-bottom: 30px;
+		color: $input-text-color;
+		&::placeholder {
+			transition: $animation-fast;
+			color: $input-text-color;
+		}
+		&:hover::placeholder {
+			color: $input-text-active-color;
+			border-bottom-color: $input-text-active-color;
+		}
+		&:focus::placeholder {
+			color: $input-text-active-color;
+			border-bottom-color: $input-text-active-color;
+		}
 		&:hover {
 			color: $input-text-active-color;
 			border-bottom-color: $input-text-active-color;
@@ -405,6 +395,18 @@ body {
 		font-size: 1rem;
 		color: $text-color;
 		margin-bottom: 30px;
+		&::placeholder {
+			transition: $animation-fast;
+			color: $input-text-color;
+		}
+		&:hover::placeholder {
+			color: $input-text-active-color;
+			border-bottom-color: $input-text-active-color;
+		}
+		&:focus::placeholder {
+			color: $input-text-active-color;
+			border-bottom-color: $input-text-active-color;
+		}
 		&:hover {
 			color: $text-active-color;
 			border-bottom-color: $text-active-color;
