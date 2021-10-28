@@ -1,0 +1,33 @@
+body {
+	min-height: 100vh;
+}
+%holyGrailLayout {
+	height: 100%;
+	display: grid;
+	grid-template: auto 1fr auto / auto 1fr auto;
+	.header {
+		grid-column: 1/4;
+	}
+	.left-side {
+		grid-column: 1/2;
+	}
+	.main {
+		grid-column: 2/3;
+	}
+	.right-side {
+		grid-column: 3/4;
+	}
+	.footer {
+		grid-column: 1/4;
+	}
+	@include sm {
+		grid-template-columns: minmax(120px, 23%) 1fr;
+		grid-template-rows: none;
+		.header {
+			grid-column: 1/4;
+		}
+		.footer {
+			grid-column: 1/4;
+		}
+	}
+}

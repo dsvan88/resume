@@ -1,0 +1,38 @@
+$arrow-color: #709dca;
+%div-button {
+	display: inline-block;
+	padding: 15px 20px;
+	height: 20px;
+	margin: 20px;
+	background-color: #ffbb42;
+	color: #ffffff;
+	font-size: 15px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+%double-dotted-arrows {
+	border-top: 2px dotted $arrow-color;
+	position: relative;
+	border-radius: 50%;
+	width: 100px;
+	height: 80px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 14px;
+		transform: rotate(-50deg);
+		border: 5px solid transparent;
+		border-right: 10px solid $arrow-color;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: 14px;
+		right: 0px;
+		transform: rotate(240deg);
+		border: 5px solid transparent;
+		border-right: 10px solid $arrow-color;
+	}
+}

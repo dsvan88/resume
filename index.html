@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script defer src="./js/main-funcs.js"></script>
+		<script defer src="./js/modals.js"></script>
+		<script defer src="./js/choices.min.js"></script>
+		<script defer src="./js/calculator.js"></script>
+		<script defer src="./js/projects.js"></script>
+		<script defer src="./js/slider.js"></script>
+		<script defer src="./js/script.js"></script>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="./css/img/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./css/img/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./css/img/favicon-16x16.png" />
+		<link rel="manifest" href="./css/img/site.webmanifest" />
+		<link rel="mask-icon" href="./css/img/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<title>DSVAN's Resume</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header" id="header">
+				<div class="header__wrapper">
+					<h1 class="header__title">
+						<i>DSVan's resume</i>
+						<a href="#contact-form" class="header__logo-place" title="Contact me">
+							<!-- <a class="header__logo-place" title="Contact me"> -->
+							<picture>
+								<!-- <source srcset="./images/logo.webp" media="(max-width: 576px)" type="image/webp"> -->
+								<!-- <source srcset="./images/logo.png" media="(max-width: 576px)" type="image/png"> -->
+								<!-- <source srcset="./images/logo.svg" type="image/svg+xml"> -->
+								<source srcset="./images/logo.webp" type="image/webp" />
+								<img title="My logo" alt="My logo" src="./images/logo.png" />
+							</picture>
+						</a>
+					</h1>
+					<h3 class="header__subtitle">
+						// <i>My resume, work skills and examples</i>
+						<p>Aspiring to become full-stack developer from back-end side</p>
+					</h3>
+				</div>
+			</header>
+			<aside class="left-side">
+				<div class="photo-place" data-action="show-photo-gallery">
+					<picture>
+						<!-- <source srcset="./images/logo.webp" media="(max-width: 576px)" type="image/webp"> -->
+						<!-- <source srcset="./images/logo.png" media="(max-width: 576px)" type="image/png"> -->
+						<!-- <source srcset="./images/logo.svg" type="image/svg+xml"> -->
+						<!-- <source srcset="./images/photo.webp" type="image/webp" /> -->
+						<img title="My photo" alt="My photo" src="./images/photo.jpg" />
+					</picture>
+				</div>
+				<ul class="contacts">
+					<h3 class="contacts__title">Contacts:</h3>
+					<li class="contacts__item">
+						<span><i class="fa fa-phone-square" aria-hidden="true"></i> : </span><a href="tel:+380964518770">+380 (96) 451-87-70</a>
+					</li>
+					<li class="contacts__item">
+						<span><i class="fa fa-envelope-o" aria-hidden="true"></i> : </span><a href="mailto:dsvan88@gmail.com">dsvan88@gmail.com</a>
+					</li>
+					<li class="contacts__item">
+						<span><i class="fa fa-telegram" aria-hidden="true"></i> : </span><a href="https://t.me/dsvan88" target="_blank">@dsvan88</a>
+					</li>
+				</ul>
+			</aside>
+			<main class="main">
+				<section class="about-me">
+					<article class="about-me__motto" id="my-motto">
+						<blockquote class="about-me__motto-text">
+							<q>If you can delegate certain tasks to the machine, why are you still doing them?</q>
+							<p>- <cite>my motto in the work and the developer's tasks.</cite></p>
+						</blockquote>
+						<p class="about-me__motto-explain">
+							I believe in the idea: "people needs self-improving more, than stacking with repetitive and monotonous tasks". So I making effort for simplify this kind of tasks until they almost lose the need for participation of humans. Still inexperienced, still self-improving, but with helps of community and clear vision of goals - nothing is impossible!
+						</p>
+					</article>
+					<div class="work-expience" id="work-expience">
+						<h3 class="work-expience__title section-second-title">Work Experience</h3>
+						<article class="work-expience__item">
+							<h4 class="work-expience__item-title article-title">Full-stack developer <span class="text-accent">Freelance</span></h4>
+							<h5 class="work-expience__item-subtitle blur-sep"><span>March 2020 - up to now</span><span>Ukraine</span></h5>
+							<ul class="article-lists">
+								<li><span>Full-stack development of public website for local Mafia Game club.</span></li>
+								<li><span>Self-education and experimenting with my back-ends projects.</span></li>
+								<li><span>Advancing in usability (UX/UI) of my projects.</span></li>
+								<li><span>Experimenting with new JS-plugins with partially editing them for my needs.</span></li>
+							</ul>
+						</article>
+						<article class="work-expience__item">
+							<h4 class="work-expience__item-title article-title">Volunteer Back-end Developer <span class="text-accent" title="Look bottom">At my main work</span></h4>
+							<h5 class="work-expience__item-subtitle blur-sep"><span>March 2013 - up to now</span><span>Ukraine</span></h5>
+							<ul class="article-lists">
+								<li><span>Creating scripts for my main work (automatization for impove quality).</span></li>
+								<li>
+									<span>Creating and support whole system of logging my work and fight with bureaucracy almost without my participation.</span>
+								</li>
+								<li><span>Deep research on needs and develop same systems for my colleagues.</span></li>
+								<li><span>In-progress for merging all development projects in one big system.</span></li>
+							</ul>
+						</article>
+						<article class="work-expience__item">
+							<h4 class="work-expience__item-title article-title">Computer Forensics <span class="text-accent">Goverment</span></h4>
+							<h5 class="work-expience__item-subtitle blur-sep"><span>April 2011 - up to now</span><span>Ukraine</span></h5>
+							<ul class="article-lists">
+								<li><span>Researching computers and programs.</span></li>
+								<li><span>Making reports and other bureaucracy.</span></li>
+								<li><span>Taking part in the triumph of justice.</span></li>
+								<li><span>Make the impossible possible.</span></li>
+							</ul>
+						</article>
+					</div>
+					<div class="education" id="education">
+						<h3 class="education__title section-second-title">Education</h3>
+						<article class="education__item">
+							<h4><span class="text-accent">Kharkiv National University of Radioelectronics</span></h4>
+							<p>Master degree (<span class="text-accent">Radiotech</span>)</p>
+							<h5 class="blur-sep"><span>September 2010 - January 2012</span><span>Ukraine</span></h5>
+						</article>
+						<article class="education__item">
+							<h4><span class="text-accent">Online</span>, with the help of the community</h4>
+							<p>Full-stack developer (<span class="text-accent">Middle</span>)</p>
+							<h5 class="blur-sep"><span>January 2014 - till now</span><span>Ukraine</span></h5>
+						</article>
+					</div>
+					<div class="skills" id="skills">
+						<h3 class="skills__title section-second-title">My skills</h3>
+						<article class="skills__item">
+							<ul class="article-lists skills-lists">
+								<h4 class="article-lists__title">Hard Skills (<span class="text-accent">Medium</span>):</h4>
+								<li>
+									<span>Back-end Development (<span class="text-accent" title="PHP ☺☺☺☺☻">PHP</span>, <span class="text-accent" title="Python ☺☺☻☻☻">Python</span>, <span class="text-accent" title="Node.JS ☺☻☻☻☻">Node.JS</span>... <span class="text-accent">without Frameworks</span>) </span>
+								</li>
+								<li>
+									<span>Databases (<span class="text-accent" title="MySQL ☺☺☺☻☻">MySQL</span>, <span class="text-accent" title="SQLite ☺☺☺☻☻">SQLite</span>)</span>
+								</li>
+								<li>
+									<span>Front-end Development (<span class="text-accent" title="HTML5 ☺☺☺☺☻">HTML5</span>, <span class="text-accent" title="CSS & Preprocessor SCSS ☺☺☺☻☻">CSS</span>, <span class="text-accent" title="Javascript ☺☺☺☺☻">JS</span>)</span>
+								</li>
+								<li>
+									<span>SEO optimization (<span class="text-accent" title="Keywords ☺☻☻☻☻">Keywords</span>, <span class="text-accent" title="Breadcrumbs ☺☻☻☻☻">Breadcrumbs</span>)</span>
+								</li>
+								<li>
+									<span>GIT-tools (<span class="text-accent" title="GitHub ☺☻☻☻☻">GitHub</span>, <span class="text-accent" title="GitLab ☺☻☻☻☻">GitLab</span>)</span>
+								</li>
+							</ul>
+							<ul class="article-lists skills-lists">
+								<h4 class="article-lists__title">Soft Skills (<span class="text-accent">Medium</span>):</h4>
+								<li><span>Scrum</span></li>
+								<li><span>Agile</span></li>
+								<li><span>GTD</span></li>
+								<li><span>Teamwork</span></li>
+							</ul>
+							<ul class="article-lists skills-lists">
+								<h4 class="article-lists__title">Languages:</h4>
+								<li><span>Russian</span> <span class="text-accent span-square-brackets" title="Native ☺☺☺☺☺">Native</span></li>
+								<li><span>Ukrainian</span> <span class="text-accent span-square-brackets" title="Native ☺☺☺☺☺">Native</span></li>
+								<li><span>English</span> <span class="text-accent span-square-brackets" title="Intermediate ☺☺☺☻☻">Intermediate</span></li>
+							</ul>
+						</article>
+					</div>
+				</section>
+				<section class="projects" id="projects">
+					<a data-action="update-projects"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i></a>
+					<span class="sr-only">Загрузка...</span>
+				</section>
+				<section class="contact-form" id="contact-form">
+					<h3 class="calculator__title section-second-title">Contact form</h3>
+					<form action="https://dsv-tester.herokuapp.com/views/reciever.php" method="POST" class="contact-form__form" id="contact-form__form">
+						<h3 class="contact-form__title">Are you minding <span class="text-accent span-square-brackets">a project</span>?</h3>
+						<p class="contact-form__descr">Leave a request to discuss the task and technical requirements</p>
+
+						<input name="customer-name" type="text" class="contact-form__input" placeholder="Name" id="callback-form-input-name" />
+						<input name="customer-email" type="email" class="contact-form__input" placeholder="E-mail" id="callback-form-input-email" />
+						<input name="customer-contact" type="tel" class="contact-form__input" placeholder="+38 (0__) ___-__-__" id="callback-form-input-phone" />
+						<textarea name="customer-message" class="contact-form__textarea" rows="2" placeholder="MESSAGE"></textarea>
+						<button class="contact-form__submit accent-btn">Discuss the project —</button>
+						<!-- <input type="submit" class="contact-form__submit accent-btn" value="Discuss the project  —" /> -->
+					</form>
+				</section>
+				<section class="calculator" id="calculator">
+					<h3 class="calculator__title section-second-title">Aproximate calculator</h3>
+					<p class="calculator__text">/ The final cost depends on the technical requirements, terms, specifics of your project.</p>
+					<form action="" class="calculator__form">
+						<div class="calculator__element-wrapper">
+							<label for="calculator-form-website-type" class="calculator__title">What should be done:</label>
+							<select name="website-type" id="calculator-form-website-type" class="calculator__select">
+								<option value="none" selected>Make your choose</option>
+								<option value="landingPage">Landing page</option>
+								<option value="website">Website</option>
+								<option value="cms">CMS</option>
+								<option value="eShop">E-shop</option>
+							</select>
+						</div>
+
+						<div class="calculator__element-wrapper">
+							<label for="calculator-form-technologies" class="calculator__title">Choose preferred technologies</label>
+							<select name="technologies" id="calculator-form-technologies" class="calculator-form-select" multiple>
+								<option value="html">HTML</option>
+								<option value="css">CSS</option>
+								<option value="js">JavaScript</option>
+								<option value="adaptive">Adaptive</option>
+								<option value="php">PHP</option>
+								<option value="node">Node.js</option>
+								<option value="laravel">Laravel (PHP Framework)</option>
+								<option value="react">React</option>
+								<option value="database">Database</option>
+							</select>
+						</div>
+
+						<div class="calculator__element-wrapper" id="calculator-form-shopping-cart">
+							<label for="" class="calculator__title">Project need personal account and shopping cart:</label>
+
+							<div class="calculator-form-input-radio-container" id="calculator-form-input-cart">
+								<input type="radio" class="calculator-form-input-field" id="calculator-form-input-cart-yes" name="cart" value="yes" checked="" />
+								<label for="calculator-form-input-cart-yes" class="calculator__element-label">Yes</label>
+
+								<input type="radio" class="calculator-form-input-field" id="calculator-form-input-cart-no" name="cart" value="no" />
+								<label for="calculator-form-input-cart-no" class="calculator__element-label">No</label>
+							</div>
+						</div>
+
+						<div class="calculator__element-wrapper" id="calculator-form-email">
+							<label for="" class="calculator__title">Requests reception on your email:</label>
+
+							<div class="calculator-form-input-radio-container" id="calculator-form-input-reception">
+								<input type="radio" class="calculator-form-input-field" id="calculator-form-input-reception-yes" name="reception" value="yes" checked="" />
+								<label for="calculator-form-input-reception-yes" class="calculator__element-label">Yes</label>
+
+								<input type="radio" class="calculator-form-input-field" id="calculator-form-input-reception-no" name="reception" value="no" />
+								<label for="calculator-form-input-reception-no" class="calculator__element-label">No</label>
+							</div>
+						</div>
+
+						<div class="calculator__element-wrapper">
+							<p class="calculator__total">Cost:</p>
+							<p class="calculator__total-cost">1000$</p>
+						</div>
+
+						<input type="submit" value="Find out the cost  —" class="accent-btn" />
+					</form>
+				</section>
+			</main>
+			<aside class="right-side right-side-hover">
+				<nav class="navigation">
+					<!-- <h3 class="navigation__title">Navigation</h3> -->
+					<li class="navigation__item">
+						<a href="#my-motto" title="My motto"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#work-expience" title="Experience"><i class="fa fa-pied-piper" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#education" title="Education"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#projects" title="My test projects"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#contact-form" title="Contact me"><i class="fa fa-comments" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#calculator" title="Aproximate calculator"><i class="fa fa-calculator" aria-hidden="true"></i></a>
+					</li>
+				</nav>
+			</aside>
+			<aside class="dashboard">
+				<nav class="navigation">
+					<!-- <h3 class="navigation__title">Navigation</h3> -->
+					<li class="navigation__item">
+						<a href="#my-motto" title="My motto"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#work-expience" title="Experience"><i class="fa fa-pied-piper" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#education" title="Education"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#projects" title="My test projects"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
+					</li>
+					<!-- <li class="navigation__item">
+						<a href="#contact-form" title="Contact me"><i class="fa fa-comments" aria-hidden="true"></i></a>
+					</li> -->
+					<li class="navigation__item">
+						<a href="#calculator" title="Aproximate calculator"><i class="fa fa-calculator" aria-hidden="true"></i></a>
+					</li>
+					<li class="navigation__item dashboard__button-up">
+						<a href="#header" title="Go up"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+					</li>
+				</nav>
+			</aside>
+			<footer class="footer">
+				<div class="footer__wrapper">
+					<div class="footer__information">
+						<h3 class="footer__title">Dmitro Vankevich</h3>
+						<h4 class="footer__subtitle">// <i>Full-stack Developer</i></h4>
+						<p class="footer__phone">+38 (096) 451-87-70</p>
+					</div>
+					<div class="footer__links">
+						<a href="#contact-form" class="footer__logo-place" title="Contact me">
+							<!-- <a class="footer__logo-place" title="Contact me"> -->
+							<picture>
+								<!-- <source srcset="./images/logo.webp" media="(max-width: 576px)" type="image/webp"> -->
+								<!-- <source srcset="./images/logo.png" media="(max-width: 576px)" type="image/png"> -->
+								<!-- <source srcset="./images/logo.svg" type="image/svg+xml"> -->
+								<source srcset="./images/logo.webp" type="image/webp" />
+								<img class="footer__logo-image" title="My logo" alt="My logo" src="./images/logo.png" />
+							</picture>
+						</a>
+						<div class="footer__social-links">
+							<a href="https://ru-ru.facebook.com/demontechno" target="_blank" class="footer__link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							<!-- <a href="" class="footer__link"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> -->
+							<a href="https://github.com/dsvan88" target="_blank" class="footer__link"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+							<a href="https://t.me/dsvan88" target="_blank" class="footer__link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+							<a href="tel:+380964518770" target="_blank" class="footer__link"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyrights">
+					<i class="fa fa-copyright" aria-hidden="true"></i>
+					<span class="ownwer-text">2019-2021 Dmytro Vankevych (DSVan)</span>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

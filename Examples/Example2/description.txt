@@ -1,0 +1,1 @@
+{"title":"&lt;/ Project #2 &gt;","technologies":["HTML","CSS"],"description":"Simple landing page with simple adaptions for mobile devices","source":"https://365psd.com/"}

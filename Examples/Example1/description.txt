@@ -1,0 +1,1 @@
+{"title":"&lt;/ Project #1 &gt;","technologies":["HTML","CSS"],"description":"Simple website without any adaptions for mobile devices created for small group","source":"https://cssauthor.com/minimal-website-design-psd-template-for-free-download/"}
