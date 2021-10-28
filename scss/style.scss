@@ -57,9 +57,18 @@ body {
 			padding-left: 20px;
 			color: $text-sub-color;
 		}
-		&__logo-place {
+		&__options {
 			float: right;
 			padding-right: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: end;
+			margin-top: -2rem;
+			.language {
+				text-align: right;
+			}
+		}
+		&__logo-place {
 			img {
 				width: 150px;
 				filter: invert(1) sepia(100%) saturate(5) brightness(0.8) hue-rotate(180deg);

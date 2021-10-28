@@ -30,16 +30,26 @@
 				<div class="header__wrapper">
 					<h1 class="header__title">
 						<i>DSVan's resume</i>
-						<a href="#contact-form" class="header__logo-place" title="Contact me">
-							<!-- <a class="header__logo-place" title="Contact me"> -->
-							<picture>
-								<!-- <source srcset="./images/logo.webp" media="(max-width: 576px)" type="image/webp"> -->
-								<!-- <source srcset="./images/logo.png" media="(max-width: 576px)" type="image/png"> -->
-								<!-- <source srcset="./images/logo.svg" type="image/svg+xml"> -->
-								<source srcset="./images/logo.webp" type="image/webp" />
-								<img title="My logo" alt="My logo" src="./images/logo.png" />
-							</picture>
-						</a>
+						<div class="header__options">
+							<span class="language">
+								<img src="/images/lang/DE.png" alt="de" data-google-lang="de" class="language__img" />
+								<img src="/images/lang/FR.png" alt="fr" data-google-lang="fr" class="language__img" />
+								<img src="/images/lang/GB.png" alt="en" data-google-lang="en" class="language__img" />
+								<img src="/images/lang/UA.png" alt="uk" data-google-lang="uk" class="language__img" />
+								<img src="/images/lang/RU.png" alt="ru" data-google-lang="ru" class="language__img" />
+								<!-- Copyright (c) 2021 https://github.com/gosquared/flags ( MIT License https://github.com/gosquared/flags/blob/master/LICENSE.txt)-->
+							</span>
+							<a href="#contact-form" class="header__logo-place" title="Contact me">
+								<!-- <a class="header__logo-place" title="Contact me"> -->
+								<picture>
+									<!-- <source srcset="./images/logo.webp" media="(max-width: 576px)" type="image/webp"> -->
+									<!-- <source srcset="./images/logo.png" media="(max-width: 576px)" type="image/png"> -->
+									<!-- <source srcset="./images/logo.svg" type="image/svg+xml"> -->
+									<source srcset="./images/logo.webp" type="image/webp" />
+									<img title="My logo" alt="My logo" src="./images/logo.png" />
+								</picture>
+							</a>
+						</div>
 					</h1>
 					<h3 class="header__subtitle">
 						// <i>My resume, work skills and examples</i>
@@ -172,8 +182,7 @@
 				</section>
 				<section class="contact-form" id="contact-form">
 					<h3 class="calculator__title section__title">Contact form</h3>
-					<!-- <form action="https://dsv-tester.herokuapp.com/views/reciever.php" method="POST" class="contact-form__form" id="contact-form__form"> -->
-					<form action="http://reciever/views/reciever.php" method="POST" class="contact-form__form" id="contact-form__form">
+					<form action="https://dsv-tester.herokuapp.com/views/reciever.php" method="POST" class="contact-form__form" id="contact-form__form">
 						<h3 class="contact-form__title">Are you minding <span class="text-accent span-square-brackets">a project</span>?</h3>
 						<p class="contact-form__descr">Leave a request to discuss the task and technical requirements</p>
 
