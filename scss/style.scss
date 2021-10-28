@@ -139,10 +139,16 @@ body {
 				font-size: 1.5rem;
 			}
 		}
+		.info-block {
+			padding: 20px 5px;
+		}
 		article {
 			background-color: $main-article-color;
-			border-radius: 4px;
-			padding: 10px 20px;
+			border-radius: 4px 4px 0px 0px;
+			padding: 10px 15px 30px 20px;
+			&:not(:last-of-type) {
+				border-bottom: 1px double #35219985;
+			}
 		}
 		.about-me {
 			&__motto {

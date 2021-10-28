@@ -4355,10 +4355,18 @@ body {
   }
 }
 
+.wrapper .main .info-block {
+  padding: 20px 5px;
+}
+
 .wrapper .main article {
   background-color: #9731dd4f;
-  border-radius: 4px;
-  padding: 10px 20px;
+  border-radius: 4px 4px 0px 0px;
+  padding: 10px 15px 30px 20px;
+}
+
+.wrapper .main article:not(:last-of-type) {
+  border-bottom: 1px double #35219985;
 }
 
 .wrapper .main .about-me__motto:hover .about-me__motto-explain {
