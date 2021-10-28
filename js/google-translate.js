@@ -42,7 +42,7 @@ function TranslateInit() {
 
     // Вешаем событие  клик на флаги
     TranslateEventHandler('click', '[data-google-lang]', function (e) {
-        TranslateCookieHandler("/" + googleTranslateConfig.lang + "/" + e.getAttribute("data-google-lang"), googleTranslateConfig.domain);
+        TranslateCookieHandler("/" + googleTranslateConfig.lang + "/" + e.dataset.googleLang, googleTranslateConfig.domain);
         // Перезагружаем страницу
         window.location.reload();
     });
