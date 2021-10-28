@@ -4656,31 +4656,31 @@ body {
   font-size: 1.5rem;
   color: #a6ff25e8;
   margin-bottom: 30px;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__input::-webkit-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__input:-ms-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__input::-ms-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__input::placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__input:hover::-webkit-input-placeholder {
@@ -4757,25 +4757,25 @@ body {
 .contact-form__textarea::-webkit-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__textarea:-ms-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__textarea::-ms-input-placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__textarea::placeholder {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #a6ff25e8;
+  color: #cfedfd;
 }
 
 .contact-form__textarea:hover::-webkit-input-placeholder {

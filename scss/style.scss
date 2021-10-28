@@ -356,10 +356,10 @@ body {
 		font-size: 1.5rem;
 		color: $input-text-color;
 		margin-bottom: 30px;
-		color: $input-text-color;
+		color: $text-color;
 		&::placeholder {
 			transition: $animation-fast;
-			color: $input-text-color;
+			color: $text-color;
 		}
 		&:hover::placeholder {
 			color: $input-text-active-color;
@@ -397,7 +397,7 @@ body {
 		margin-bottom: 30px;
 		&::placeholder {
 			transition: $animation-fast;
-			color: $input-text-color;
+			color: $text-color;
 		}
 		&:hover::placeholder {
 			color: $input-text-active-color;
