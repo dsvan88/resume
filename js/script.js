@@ -54,7 +54,7 @@ document.body.querySelector('.contact-form__submit').addEventListener('click', (
     event.preventDefault();
     mainFunc.sendRequest();
 });
-
+console.log(Cookies.get('googtrans'));
 if (googleTranslateConfig.langFirstVisit && (!Cookies.get('googtrans') || Cookies.get('googtrans') != `/${googleTranslateConfig.lang}/${googleTranslateConfig.lang}`)) {
     let script = document.createElement('script');
     script.src = "//translate.google.com/translate_a/element.js?cb=TranslateInit";
