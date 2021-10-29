@@ -35,7 +35,6 @@ body {
 		grid-template-columns: auto;
 		border-radius: 0px;
 		box-shadow: none;
-		// overflow: scroll;
 	}
 	.header {
 		padding: 1rem;
@@ -44,13 +43,12 @@ body {
 		color: $text-color;
 		&__wrapper {
 			border-width: 2px;
-			border-image: linear-gradient(155deg, #ffaf01da 1%, transparent 20%, transparent 90%, #ffaf01da 99%) 2;
+			border-image: linear-gradient(155deg, $accent-color 1%, transparent 20%, transparent 90%, $accent-color 99%) 2;
 			border-style: solid;
-			padding: 5px 15px 10px 25px;
+			padding: 15px 15px 20px 25px;
 		}
 		&__title {
 			font-family: "Comfortaa", cursive;
-			// font-family: "Noto Sans", sans-serif;
 			font-weight: 900;
 		}
 		&__subtitle {
@@ -66,6 +64,15 @@ body {
 			margin-top: -2rem;
 			.language {
 				text-align: right;
+				img {
+					cursor: pointer;
+					&.language__img_active {
+						filter: drop-shadow(0px 0px 10px $accent-color);
+					}
+				}
+			}
+			@include sm {
+				margin-top: -1rem;
 			}
 		}
 		&__logo-place {

@@ -4227,10 +4227,10 @@ body {
 
 .wrapper .header__wrapper {
   border-width: 2px;
-  -o-border-image: linear-gradient(155deg, #ffaf01da 1%, transparent 20%, transparent 90%, #ffaf01da 99%) 2;
-     border-image: linear-gradient(155deg, #ffaf01da 1%, transparent 20%, transparent 90%, #ffaf01da 99%) 2;
+  -o-border-image: linear-gradient(155deg, #ffa318 1%, transparent 20%, transparent 90%, #ffa318 99%) 2;
+     border-image: linear-gradient(155deg, #ffa318 1%, transparent 20%, transparent 90%, #ffa318 99%) 2;
   border-style: solid;
-  padding: 5px 15px 10px 25px;
+  padding: 15px 15px 20px 25px;
 }
 
 .wrapper .header__title {
@@ -4261,6 +4261,21 @@ body {
 
 .wrapper .header__options .language {
   text-align: right;
+}
+
+.wrapper .header__options .language img {
+  cursor: pointer;
+}
+
+.wrapper .header__options .language img.language__img_active {
+  -webkit-filter: drop-shadow(0px 0px 10px #ffa318);
+          filter: drop-shadow(0px 0px 10px #ffa318);
+}
+
+@media (max-width: 576px) {
+  .wrapper .header__options {
+    margin-top: -1rem;
+  }
 }
 
 .wrapper .header__logo-place img {

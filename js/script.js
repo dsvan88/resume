@@ -54,7 +54,6 @@ document.body.querySelector('.contact-form__submit').addEventListener('click', (
     event.preventDefault();
     mainFunc.sendRequest();
 });
-// console.log(Cookies.get('googtrans'));
 if (googleTranslateConfig.langFirstVisit && (!Cookies.get('googtrans') || Cookies.get('googtrans') != `/${googleTranslateConfig.lang}/${googleTranslateConfig.lang}`)) {
     let script = document.createElement('script');
     script.src = "//translate.google.com/translate_a/element.js?cb=TranslateInit";
@@ -74,48 +73,14 @@ if (googleTranslateConfig.langFirstVisit && (!Cookies.get('googtrans') || Cookie
         });    
     });
     observer.observe(observerTarget, config);
-    setTimeout(() => observer || observer.disconnect(), 5000);
+    setTimeout(() => (!observer || observer.disconnect()), 5000);
 }
 else {
     const langsImages = document.body.querySelectorAll('img[data-google-lang]');
     langsImages.forEach(element => {
         element.addEventListener('click', () => {
-            TranslateCookieHandler(`/${googleTranslateConfig.lang}/${element.dataset.googleLang}`, document.domain);
-            // Cookies.set('googtrans', `/${googleTranslateConfig.lang}/${element.dataset.googleLang}`);
+            TranslateCookieHandler(`/${googleTranslateConfig.lang}/${element.dataset.googleLang}`);
             window.location.reload();
         })
     })
 }
-// console.log(document.domain);
-// создаем новый экземпляр наблюдателя
-
-
-
-
-;
-
-// else {
-//     const langsImages = document.body.querySelectorAll('img[data-google-lang]');
-//     langsImages.forEach(element => {
-//         element.addEventListener('click', () => {
-//             Cookies.set('googtrans', `/${googleTranslateConfig.lang}/${element.dataset.googleLang}`);
-//             // Перезагружаем страницу
-//             window.location.reload();
-//         })
-//     })
-// }
-
-// const langsImages = document.body.querySelectorAll('img[data-google-lang]');
-// langsImages.forEach(element => {
-//     element.addEventListener('click', () => {
-//         element.dispatchEvent(new Event('click'));
-//     })
-// })
-
-// TranslateInit();
-// setTimeout(() => {
-//     document.body.querySelector('.skiptranslate').style.display = 'none';
-//     document.body.style.position = 'static';
-// }
-// , 1000);
-

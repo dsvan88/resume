@@ -9,7 +9,7 @@ const googleTranslateConfig = {
     lang: "en",
     /* The language we translate into on the first visit*/
     /* Язык, на который переводим при первом посещении */
-    langFirstVisit: 'ru',
+    langFirstVisit: 'en',
     /* Если скрипт не работает на поддомене, 
     раскомментируйте и
     укажите основной домен в свойстве domain */
@@ -42,7 +42,7 @@ function TranslateInit() {
 
     // Вешаем событие  клик на флаги
     TranslateEventHandler('click', '[data-google-lang]', function (e) {
-        TranslateCookieHandler("/" + googleTranslateConfig.lang + "/" + e.dataset.googleLang, googleTranslateConfig.domain);
+        TranslateCookieHandler(`/${googleTranslateConfig.lang}/${e.dataset.googleLang}`, googleTranslateConfig.domain);
         // Перезагружаем страницу
         window.location.reload();
     });
@@ -57,9 +57,6 @@ function TranslateGetCode() {
 function TranslateCookieHandler(val, domain) {
     // Записываем куки /язык_который_переводим/язык_на_который_переводим
     Cookies.set('googtrans', val);
-    // Cookies.set("googtrans", val, {
-    //     domain: "." + document.domain,
-    // });
 
     if (domain == "undefined") return;
     // записываем куки для домена, если он назначен в конфиге
