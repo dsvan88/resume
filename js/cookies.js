@@ -25,7 +25,9 @@ const Cookies = {
                 updatedCookie += "=" + optionValue;
             }
         }
-
+        if (window.location.protocol === 'https:') {
+            updatedCookie += '; SameSite=None; Secure';
+        }
         document.cookie = updatedCookie;
     },
     delete: function (name) {

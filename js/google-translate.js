@@ -57,9 +57,9 @@ function TranslateGetCode() {
 function TranslateCookieHandler(val, domain) {
     // Записываем куки /язык_который_переводим/язык_на_который_переводим
     Cookies.set('googtrans', val);
-    Cookies.set("googtrans", val, {
-        domain: "." + document.domain,
-    });
+    // Cookies.set("googtrans", val, {
+    //     domain: "." + document.domain,
+    // });
 
     if (domain == "undefined") return;
     // записываем куки для домена, если он назначен в конфиге
