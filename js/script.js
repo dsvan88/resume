@@ -79,6 +79,8 @@ if (googleTranslateConfig.langFirstVisit && (!Cookies.get('googtrans') || Cookie
 else {
     const langsImages = document.body.querySelectorAll('img[data-google-lang]');
     langsImages.forEach(element => {
+        if (element.dataset.googleLang === googleTranslateConfig.lang)
+            element.classList.add('language__img_active');
         element.addEventListener('click', () => {
             TranslateCookieHandler(`/${googleTranslateConfig.lang}/${element.dataset.googleLang}`, googleTranslateConfig.domain);
             window.location.reload();
