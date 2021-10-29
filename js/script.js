@@ -80,6 +80,7 @@ else {
     const langsImages = document.body.querySelectorAll('img[data-google-lang]');
     langsImages.forEach(element => {
         element.addEventListener('click', () => {
+            console.log(document.domain);
             TranslateCookieHandler(`/${googleTranslateConfig.lang}/${element.dataset.googleLang}`, document.domain);
             // Cookies.set('googtrans', `/${googleTranslateConfig.lang}/${element.dataset.googleLang}`);
             window.location.reload();
