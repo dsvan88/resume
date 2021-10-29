@@ -54,6 +54,7 @@ document.body.querySelector('.contact-form__submit').addEventListener('click', (
     event.preventDefault();
     mainFunc.sendRequest();
 });
+
 if (googleTranslateConfig.langFirstVisit && (!Cookies.get('googtrans') || Cookies.get('googtrans') != `/${googleTranslateConfig.lang}/${googleTranslateConfig.lang}`)) {
     let script = document.createElement('script');
     script.src = "//translate.google.com/translate_a/element.js?cb=TranslateInit";
@@ -79,7 +80,7 @@ else {
     const langsImages = document.body.querySelectorAll('img[data-google-lang]');
     langsImages.forEach(element => {
         element.addEventListener('click', () => {
-            TranslateCookieHandler(`/${googleTranslateConfig.lang}/${element.dataset.googleLang}`);
+            TranslateCookieHandler(`/${googleTranslateConfig.lang}/${element.dataset.googleLang}`, googleTranslateConfig.domain);
             window.location.reload();
         })
     })

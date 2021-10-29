@@ -66,7 +66,6 @@ function TranslateCookieHandler(val, domain) {
     Cookies.set("googtrans", val, {
         domain: "." + domain,
     });
-    console.log(domain);
 }
 
 function TranslateEventHandler(event, selector, handler) {
