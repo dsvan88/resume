@@ -28,7 +28,6 @@ const Cookies = {
         if (window.location.protocol === 'https:') {
             updatedCookie += '; SameSite=None; Secure';
         }
-        console.log(updatedCookie);
         document.cookie = updatedCookie;
     },
     delete: function (name) {
