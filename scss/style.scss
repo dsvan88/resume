@@ -50,6 +50,12 @@ body {
 		&__title {
 			font-family: "Comfortaa", cursive;
 			font-weight: 900;
+			@include sm {
+				i {
+					display: inline-block;
+					max-width: 50%;
+				}
+			}
 		}
 		&__subtitle {
 			padding-left: 20px;

@@ -4238,6 +4238,13 @@ body {
   font-weight: 900;
 }
 
+@media (max-width: 576px) {
+  .wrapper .header__title i {
+    display: inline-block;
+    max-width: 50%;
+  }
+}
+
 .wrapper .header__subtitle {
   padding-left: 20px;
   color: #45baff;
