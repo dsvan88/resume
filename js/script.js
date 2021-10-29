@@ -21,7 +21,7 @@ window.addEventListener('scroll', (event) => {
         dashboardPanelFixed.style.pointerEvents = 'none';
         navRightSide.closest('.right-side').classList.add('right-side-hover');
     }
-    if (document.body.getBoundingClientRect().top < -400 && !projectsUpdated){
+    if (window.scrollY > 600 && !projectsUpdated){
         projectsUpdated = true;
         mainFunc.updateProjects.call(mainFunc);
     }
@@ -80,14 +80,13 @@ else {
     const langsImages = document.body.querySelectorAll('img[data-google-lang]');
     langsImages.forEach(element => {
         element.addEventListener('click', () => {
-            console.log(document.domain);
             TranslateCookieHandler(`/${googleTranslateConfig.lang}/${element.dataset.googleLang}`, document.domain);
             // Cookies.set('googtrans', `/${googleTranslateConfig.lang}/${element.dataset.googleLang}`);
             window.location.reload();
         })
     })
 }
-
+// console.log(document.domain);
 // создаем новый экземпляр наблюдателя
 
 
