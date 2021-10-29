@@ -15,7 +15,7 @@ const googleTranslateConfig = {
     укажите основной домен в свойстве domain */
     domain: document.domain
 };
-
+console.log(document.domain);
 function TranslateInit() {
 
     if (googleTranslateConfig.langFirstVisit && !Cookies.get('googtrans')) {
@@ -58,7 +58,7 @@ function TranslateCookieHandler(val, domain) {
     // Записываем куки /язык_который_переводим/язык_на_который_переводим
     Cookies.set('googtrans', val);
 
-    if (domain == "undefined") return;
+    if (!domain) return;
     // записываем куки для домена, если он назначен в конфиге
     Cookies.set("googtrans", val, {
         domain: domain,
