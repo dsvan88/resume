@@ -103,6 +103,19 @@ const mainFunc = {
             modal.fillModalContent({ html: `<h1>${data.text}</h1>`, title: data.title, buttons: [{ 'text': 'Okay, I’ill wait!', 'className': 'modal__button modal-close' }] });
         }
     },
+    toogleContacts: function (event) {
+        
+        const leftSide = document.body.querySelector('aside.left-side');
+        if (event.target.id == 'sign-two') {
+            leftSide.style.left = '-220px';
+            leftSide.style.width = 'auto';
+        }
+        else
+        {
+            leftSide.style.left = '0px';
+            leftSide.style.width = '60vw';
+        }    
+    }
 };
 function formDataToJson(data) {
     const object = {};

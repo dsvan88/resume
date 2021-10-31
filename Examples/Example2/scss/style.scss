@@ -37,9 +37,7 @@ input[name="phone"] {
 		z-index: 10;
 		padding: 10px 6% 10px 20px;
 		width: 91%;
-	}
-	&__logo {
-		@include sm {
+		&__logo {
 			width: 30px;
 		}
 	}

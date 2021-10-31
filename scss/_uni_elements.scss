@@ -259,3 +259,37 @@ a {
 		font-size: 1.4em;
 	}
 }
+// Responsible NAVigation bar on clear CSS
+#sign-one,
+#sign-two {
+	display: none;
+	padding: 10px;
+	// background-color: $achor-visited-color;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4rem;
+	color: $achor-color;
+	cursor: pointer;
+}
+@include sm {
+	#sign-one {
+		display: flex;
+	}
+}
+#show-contacts-bar {
+	display: none;
+	&:checked {
+		// & ~ .navigation {
+		// 	left: 0;
+		// }
+		& ~ label {
+			#sign-one {
+				display: none;
+			}
+			#sign-two {
+				display: flex;
+			}
+		}
+	}
+}
