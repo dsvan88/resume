@@ -33,10 +33,10 @@ const mainFunc = {
                     <div class="projects__item-description">
                         <div class="projects__item-technology">Used technologies:<p><span class="span-square-brackets"><span class="text-accent">${data.technologies.join('</span>, <span class="text-accent">')}</span></span></p></div>
                         <p class="projects__item-explain">${data.description}</p>
-                        <div class="projects__item-source"><a href="${data.source}" title="${data.source}" target="_blank"><i class="fa fa-copyright" aria-hidden="true"></i>Copyright</a></div>
+                        <div class="projects__item-source"><a href="${data.source}" title="${data.source}" target="_blank"><i class="fa fa-copyright"></i>Copyright</a></div>
                     </div>
                     <div class="projects__search-icon">
-                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i class="fa fa-search"></i>
                     </div>
                 </div>`;
         }
@@ -65,9 +65,9 @@ const mainFunc = {
         modal.fillModalContent({
             html: `
                 <div class="gallery">
-                    <i class="fa fa-arrow-circle-o-left arrow-left" aria-hidden="true"></i>
+                    <i class="fa fa-arrow-circle-o-left arrow-left"></i>
                     ${galleryWrapper.innerHTML}
-                    <i class="fa fa-arrow-circle-o-right arrow-right" aria-hidden="true"></i>
+                    <i class="fa fa-arrow-circle-o-right arrow-right"></i>
                 </div>`,
             title: `My photo gallery`
         });
