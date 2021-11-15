@@ -166,6 +166,15 @@ body {
 			font-family: "Comfortaa", cursive;
 			font-size: 2.5rem;
 			font-weight: 600;
+			&::after {
+				content: "";
+				display: block;
+				width: 150px;
+				height: 5px;
+				margin: 5px 0px;
+				background-color: $input-text-active-color;
+				border-radius: 3px;
+			}
 		}
 		@include sm {
 			padding: 10px 5px;
