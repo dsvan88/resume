@@ -1,4 +1,4 @@
 git add -A
-git commit -m "v0.99 An objective review of my soft skills"
+git commit -m "v1.0b Done. And fix moving closest blocks with hover projects items"
 git push -u origin main
 pause

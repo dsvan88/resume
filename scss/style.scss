@@ -24,7 +24,7 @@ body {
 }
 .wrapper {
 	background: linear-gradient(#470c4759 70%, #22126f54);
-	max-width: 1024px;
+	max-width: 1200px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 60px 20px #1458f8a3;
 	overflow: hidden;
@@ -256,8 +256,9 @@ body {
 				position: relative;
 				overflow: hidden;
 				margin: 5px;
-				padding-left: 10px;
+				border: 1px solid transparent;
 				border-radius: 5px;
+				padding-left: 10px;
 				text-align: center;
 				cursor: pointer;
 				&:hover {
